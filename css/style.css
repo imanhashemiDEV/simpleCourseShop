@@ -1,0 +1,679 @@
+/*
+1.  Reset CSS
+2.  Global CSS
+3.  Header CSS
+4.  Navigation CSS
+5.  Services
+6.  About CSS
+7.  Vision CSS
+8.  FastFood CSS
+9.  Latestnews CSS
+10. Customer CSS
+11. Contact CSS
+12. Footer CSS
+13. Tooltip CSS
+*/
+/*----------------------------1. Reset----------------------------*/
+/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent
+}
+
+body {
+    line-height:1
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display:block
+}
+
+nav ul {
+    list-style:none
+}
+
+blockquote,q {
+    quotes:none
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+    content:'';
+    content:none
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:700
+}
+
+del{
+    text-decoration:line-through
+}
+
+abbr[title],dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:1em 0;
+    padding:0
+}
+
+input,select {
+    vertical-align:middle
+}
+
+* {
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box
+}
+
+img {
+  max-width: 100%
+}
+
+li {
+  list-style: none
+}
+
+:focus {
+  outline: 0
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out
+}
+
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none
+}
+/*----------------------------------------------------*/
+/*font Variables*/
+/*Color Variables*/
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css?family=Oswald:300, 500, 700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+/*---------------------------------------------------- */
+/*----------------------------------------------------*/
+
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/Vazir-Black-FD.eot');
+  src: url('../fonts/Vazir-Black-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/Vazir-Black-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/Vazir-Black-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/Vazir-Black-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: bold;
+  src: url('../fonts/Vazir-Bold-FD.eot');
+  src: url('../fonts/Vazir-Bold-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/Vazir-Bold-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/Vazir-Bold-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/Vazir-Bold-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Vazir-Medium-FD.eot');
+  src: url('../fonts/Vazir-Medium-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/Vazir-Medium-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/Vazir-Medium-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/Vazir-Medium-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Vazir-Light-FD.eot');
+  src: url('../fonts/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/Vazir-Light-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/Vazir-Light-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/Vazir-Light-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 200;
+  src: url('../fonts/Vazir-Light-FD.eot');
+  src: url('../fonts/Vazir-Light-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/Vazir-Light-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/Vazir-Light-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/Vazir-Light-FD.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Vazir-FD.eot');
+  src: url('../fonts/Vazir-FD.eot?#iefix') format('embedded-opentype'),
+    /* IE6-8 */
+  url('../fonts/Vazir-FD.woff2') format('woff2'),
+    /* FF39+,Chrome36+, Opera24+*/
+  url('../fonts/Vazir-FD.woff') format('woff'),
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+  url('../fonts/Vazir-FD.ttf') format('truetype');
+}
+
+
+body{
+  font-family: vazir !important;
+}
+
+
+/*      Start My Style     */
+
+
+.header-top {
+  background: #57bfea;
+}
+
+.header-top ul li {
+  display: inline-block;
+}
+
+.header-top ul li a {
+  display: block;
+  padding: 1rem;
+  font-size: .8rem;
+  color: white;
+}
+
+.header-top ul li a:hover {
+  color: #476678;
+}
+
+/*  */
+
+.header-main {
+  padding: 3rem 0;
+}
+
+.header-main .logo {
+  vertical-align: middle;
+}
+
+.header-main .logo img {
+  height: 60px;
+  width: 110px;
+}
+
+.header-main ul li {
+  display: inline-block;
+  position: relative;
+}
+
+.header-main ul li a {
+  padding: 10px 20px 20px;
+  display: block;
+  font-size: 14px;
+}
+
+.header-main ul li ul {
+  opacity: 0;
+  visibility: hidden;
+  padding: 0;
+  margin: 20px 0;
+  position: absolute;
+  width: 250px;
+  float: right;
+  transition: all .2s ease-in-out;
+  text-align: right;
+  padding-right: 0;
+  z-index: 13;
+}
+
+.header-main ul li ul:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: 12px;
+  width: 15px;
+  height: 15px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid yellow;
+}
+
+.header-main ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+
+.header-main ul li ul li {
+  display: inline-block;
+  width: 100%;
+  background: #fff;
+}
+
+.header-main .nav-link {
+ padding-top: 18px;
+}
+.header-main ul li ul li a:hover {
+  display: block;
+  background: pink;
+  color: #fff;
+  z-index: 200;
+}
+
+.header-main ul {
+  padding-right: 50px;
+}
+
+.header-main .open-cart {
+  height: 50px;
+  width: 50px;
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  border-radius: 50%;
+  background:yellow url(../images/cart.png) no-repeat center center;
+}
+
+.header-main .cart {
+  display: none;
+  width: 650px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  overflow: visible;
+  background: #fff;
+  text-align: center;
+  z-index: 11;
+}
+
+.header-main .cart table {
+  margin: 0;
+}
+
+.header-main .cart tr,
+.header-main .cart td {
+  padding: 20px 5px;
+  vertical-align: middle;
+}
+
+.header-main .cart td img {
+  width: 120px;
+  height: 120px;
+}
+
+.header-main .cart h6 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.header-main .cart .cart-price {
+  display: block;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.header-main .cart .fa{
+  color: pink;
+  font-size: 18px;
+}
+
+.header-main .cart .fa:hover {
+  color: black;
+}
+
+.header-main .cart .btn-cart {
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 20px;
+  background: #e8e8e8;
+}
+
+.header-main .cart .btn-cart:hover {
+
+  background: pink;
+  color: #fff;
+}
+
+.header-main .cart .pink {
+  color: pink;
+  font-size: 16px;
+}
+
+/* header bottom */
+
+.header-bottom {
+  position: relative;
+  width: 100%;
+  padding: 15px 10px;
+  background: #fff;
+  display: inline-block;
+  z-index: 10;
+}
+
+.header-bottom .search {
+  float: right;
+  width: 24rem;
+  position: relative;
+}
+
+.header-bottom .search input{
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 1.2rem;
+  background: white;
+  line-height: 3rem;
+  border: 1px solid #e2e2e2;
+  padding: 0 2rem 0 3rem;
+}
+
+.header-bottom .search button {
+  border: none;
+  background: transparent;
+  position: absolute;
+  top: 12px;
+  left: 1rem;
+  color: pink;
+  outline: none;
+}
+
+.header-bottom .social{
+  float: left;
+  line-height: 3rem;
+}
+
+.social li{
+  display: inline-block;
+}
+
+.social li a{
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  margin: 0 5px;
+  background:#57bfea;
+  text-align: center;
+  line-height: 2.2rem;
+  color: white;
+  border-radius: 50%;
+}
+
+.social li a:hover {
+  background:pink ;
+}
+
+
+
+/* Slider */
+
+.slider{
+  margin-top: -2rem;
+}
+
+.owl-item img{
+  height: 30rem;
+}
+
+.owl-next,
+.owl-prev {
+  position: absolute;
+  top: 40%;
+  outline: none !important;
+}
+
+.owl-next {
+  left: 5rem;
+  
+}
+
+.owl-next span {
+  font-size: 4rem;
+  color: white !important;
+ 
+}
+
+.owl-prev {
+  right: 5rem;
+}
+
+.owl-prev span {
+  font-size: 4rem;
+  color: white !important;
+}
+
+.owl-theme .owl-dots {
+  margin-top: -2rem;
+  text-align: right;
+  z-index: 22;
+  position: absolute;
+  width: 100%;
+}
+
+.owl-theme .owl-dots .owl-dot {
+  background: #e7d9eb;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease-in;
+  margin: 0 7px;
+  outline: none;
+}
+
+.owl-theme .owl-dots .owl-dot:hover {
+  background: #ff487e;
+}
+
+.owl-theme .owl-dots .owl-dot.active {
+  background: #ff487e;
+}
+
+
+/* description */
+
+.description{
+  opacity: 0;
+  visibility: hidden;
+  background: #000;
+  height: 58%;
+  width: 100%;
+  transition: all .2s ease-in;
+}
+
+ .card:hover .description{
+   opacity: .7;
+   visibility: visible;
+}
+
+.description ul{
+  position: relative;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.description ul li{
+  display: inline;
+  color: white;
+  padding: .5rem;
+ 
+}
+
+.description ul li .fa{
+  padding: .2rem;
+ 
+}
+
+
+.description a {
+display: block;
+position: relative;
+top: 50%;
+  text-align: center;
+  background:lightseagreen;
+  color: #e2e2e2;
+  padding: .5rem;
+  border-radius: 30px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+
+.suggestion {
+  margin-top: 1.5rem;
+
+  background-image: url(../images/pattern.png), linear-gradient(to right,#05e6aa,#1cbdf9);;
+  padding: 2rem;
+}
+
+footer{
+  color: white;
+  background-color: #2c373b;
+}
+
+footer ul li{
+  color: white;
+  list-style-type: disc;
+  line-height: 2.5rem;
+}
+
+.about{
+   line-height: 2.5rem;
+}
+
+
+/* Responsive */
+
+@media (max-width:768px){
+
+  .header-top ul{
+    text-align: center;
+    float: none;
+  }
+
+
+}
+
+@media (max-width:576px){
+
+ 
+.header-top ul{
+  text-align: center;
+  float: none;
+}
+
+.header-main .navbar{
+  padding-right: 4rem;
+}
+
+.header-main .basket-table{
+  width: 35rem;
+}
+
+
+.header-main .top-logo , .header-main .top-menu{
+  width: 50% !important;
+}
+
+.header-bottom .search{
+  width: 100%;
+}
+
+.header-bottom .social{
+  float: none;
+  padding-top: .5rem;
+  text-align: center;
+}
+
+.slider img{
+
+  height:20rem ;
+}
+
+
+footer ul li{
+
+  font-size: small;
+
+}
+
+footer p{
+  margin-top: 1.5rem;
+}
+
+
+
+
+
+
+}
